@@ -1,0 +1,23 @@
+﻿<Page x:Class="WpfApp1.Views.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="220" d:DesignWidth="300"
+      Title="Registration">
+    <Grid>
+        <Button Content="←" Height="40" Width="20" FontSize="20" RenderTransformOrigin="-5.586,-2.787" Margin="10,6,270,194" Click="Reset"/>
+        <TextBlock Text="Логин: " Height="15" Width="50" Margin="75,10,175,195"/>
+        <TextBox Name="Login" TextWrapping="Wrap" Height="20" Width="150" Margin="75,31,75,169"></TextBox>
+
+        <TextBlock Text="Пароль: " Height="15" Width="50" Margin="75,56,175,149"/>
+        <TextBox Name="Password" TextWrapping="Wrap" Height="20" Width="150" Margin="75,77,75,123"></TextBox>
+
+        <TextBlock Text="Подтвердите пароль: " Height="15" Width="120" Margin="75,102,105,103"/>
+        <TextBox Name="ConfirmePassword" TextWrapping="Wrap" Height="20" Width="150" Margin="75,123,75,77"></TextBox>
+
+        <Button Content="Зарегистрироваться" Height="20" Width="120" Background="White" Margin="90,148,90,52" Click="Register"/>
+    </Grid>
+</Page>
